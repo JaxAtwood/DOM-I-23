@@ -53,6 +53,24 @@ nav.forEach(function (value, i) {
   value.textContent = siteContent.nav[`nav-item-${i +1}`];
 })
 
+const newNavStyle = document.querySelectorAll("a");
+newNavStyle.forEach (element => {
+  element.style.color = 'green';
+})
+
+a = document.querySelector("nav");
+let pH = document.createElement("a");
+pH.textContent = 'Dom & Dom-er';
+pH.style.color = 'green';
+a.appendChild(pH);
+pH.setAttribute('href', "#");
+
+a = document.querySelector("nav");
+let pH2 = document.createElement("a");
+pH2.textContent = 'Home';
+pH2.style.color = 'green';
+a.prepend(pH2);
+pH2.setAttribute('href', "#");
 
 //round img
 let round = document.getElementById ("cta-img");
@@ -108,8 +126,9 @@ bottomF.textContent = siteContent ["main-content"] ["vision-content"]
 
 //contact
 //WHY YOU NO WORK?!?!?!!
-// let reachOut = document.querySelector(".contact");
-// reachOut.textContent = siteContent.contact
+// let reachOut = document.querySelectorAll(".contact .h4");
+// reachOut.textContent = siteContent.contact.h4
+
 // let addy = document.getElementsByClassName("contact") [0];
 // addy.textContent = siteContent.contact.address
 
