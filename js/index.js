@@ -76,6 +76,11 @@ pH2.setAttribute('href', "#");
 let round = document.getElementById ("cta-img");
 round.setAttribute ('src', siteContent["cta"]["img-src"])
 
+// //Adjust Dom is Awesome
+// apple = document.querySelectorAll("cta-text h1");
+// // let banana = document.createElement("h1");
+// // banana.textContent = 'DOM TEST';
+// apple.removeChild ("h1");
 
 //Dom is Awesome
 let phrase = document.querySelector("h1");
